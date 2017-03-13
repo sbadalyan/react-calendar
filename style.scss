@@ -1,0 +1,42 @@
+.row{
+	width: 100%;
+	display: flex;
+	margin-bottom:15px;
+}
+
+#calendar{
+	margin: 0 auto;
+}
+.calendar{
+	width:250px;
+
+	& .cell-block{
+		width: 34px;
+		height: 34px;
+		display: table;
+		float:left;
+
+		& .cell{
+			display: table-cell;
+			vertical-align: middle;
+			text-align: center;
+		}
+
+		&.selected{
+		    background: #1a1adc;
+			color:white;
+		}
+	}
+	& .month-year-block{
+		display : flex;
+		
+		& .month{
+			flex : 1;
+			text-align : right;
+			margin-right : 10px;
+		}
+		& .year{
+			flex : 1;
+		}
+	}
+}
